@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'pt_sans';
+    src: url('../fonts/pt_sans-web-bold.eot');
+    src: url('../fonts/pt_sans-web-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pt_sans-web-bold.woff2') format('woff2'),
+    url('../fonts/pt_sans-web-bold.woff') format('woff'),
+    url('../fonts/pt_sans-web-bold.svg#pt_sansbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'pt_sans';
+    src: url('../fonts/pt_sans-web-regular.eot');
+    src: url('../fonts/pt_sans-web-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pt_sans-web-regular.woff2') format('woff2'),
+    url('../fonts/pt_sans-web-regular.woff') format('woff'),
+    url('../fonts/pt_sans-web-regular.svg#pt_sansregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    text-transform: uppercase;
+}
+body{
+    font: 400 14px/1.5 'pt_sans', Arial, Verdana, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: 0.3s;
+    -moz-transition:  0.3s;
+    transition:  0.3s;
+}
+a:hover{
+    color: #81b3d2;
+}
+a:active{
+    color: #b2b2b2;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.wrapper{
+    overflow: hidden;
+}
+.container{
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+    -webkit-box-shadow:  5px 0 0 15px rgba(0,0,0,0.2);
+    -moz-box-shadow:  5px 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: 5px 0 0 15px rgba(0,0,0,0.2);
+}
+.header{
+    background: #fff;
+    min-height: 56px;
+    position: relative;
+}
+.navigation{
+    display: flex;
+    min-height: 56px;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.navigation a{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navigation div{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-left{
+    padding: 0 185px 0 60px;
+}
+.navigation-right{
+    padding: 0 60px 0 185px;
+}
+.logo{
+    width: 138px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -69px;
+    z-index: 9;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.banner{
+    position: relative;
+    background: url("../images/banner.jpg") no-repeat 50% 0;
+    background-size: cover;
+    min-height: 510px;
+    text-align: center;
+    padding: 77px 0 0 0;
+    margin-bottom: 60px;
+}
+
+.banner:after,
+.banner:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 57px;
+    background-size: cover;
+    bottom: 0;
+}
+
+.banner:after {
+	background-image: url(../images/right-shape.png);
+    right: 0;
+}
+.banner:before {
+	background-image: url(../images/leftshape.png);
+    left: 0;
+}
+.welcome {
+    margin-bottom: 50px;
+}
+.sedona-heading {
+	margin-bottom: 57px;
+}
+
+.title-21 {
+    color: #000;
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto 15px;
+    max-width: 510px;
+}
+
+.title-30 {
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+.title-box {
+    margin:  0 0 55px;
+}
+.title-21.title-white {
+    color: #fff;
+}
+
+
+.centered {
+    text-align: center
+}
+.title-box .title-21 {
+    margin-bottom: 35px;
+}
+
+.two-cols {
+    display: flex;
+    align-items: stretch;
+    background-color: #81b3d2;
+    overflow: hidden;
+}
+
+.reason {
+    flex-basis: 33.3%;
+    color: #000;
+    padding: 55px 60px;
+}
+
+.two-cols .reason {
+    color: #fff;
+
+}
+.two-cols img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    display: block;
+}
+
+.two-cols div {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.reason-text {
+    line-height: 1.5;
+}
+.reason .title-21 {
+    max-width: 235px;
+}
+
+.reason-number {
+    margin: 0 0 19px;
+}
+
+.service {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.service > div {
+    flex-basis: 33.3%;
+    padding: 55px 60px;
+}
+
+.service img {
+    margin-bottom: 25px;
+}
+
+.service .title-21{
+    margin-bottom: 22px;
+}
+
+.reasons {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+}
+.reasons .title-21 {
+    max-width: 180px;
+}
+
+.interest {
+    padding: 57px 0 140px;
+}
+
+.interest div{
+    margin: 0 auto;
+	max-width: 450px;
+    color: #333333;
+}
+.interest .title-30{
+	margin-bottom: 31px;
+}
+
+.search {
+	position: relative;
+    min-height: 470px;
+    background-image: url(../images/map.png);
+    background-size: cover;
+}
+form {
+    max-width: 570px;
+    width: 100%;
+    position: absolute;
+    top: -77px;
+    left: 50%;
+    margin-left: -285px;
+    padding: 0 57px 57px 57px;
+    background-color: #fff;
+    
+}
+form h4 {
+    padding: 35px 0;
+    text-align: center;
+    background-color: #766357;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 1;
+    margin: 0 -57px 57px;
+}
+
+input[type='submit']{
+    padding: 21px 0;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 21px;
+    line-height: 1;
+    background-color: #81b3d2;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    margin-top: 25px;
+}
+
+form > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.datepicker {
+	min-width: 345px;
+    background-color: #f2f2f2;
+    border: none;
+    color: #000;
+    font-weight: 700;
+    padding: 15px;
+    position: relative;
+    background-image: url(../images/datepicker.png);
+    background-repeat: no-repeat;
+    background-position:  315px center;
+    cursor: pointer;
+}
+
+.control-group {
+	min-width: 345px;
+}
+.control-group-2 {
+	min-width: 180px;
+}
+form span {
+    color: #000;
+    font-weight: 700;
+}
+.number {
+	display: flex;
+    justify-content: space-between;
+}
+.number input{
+	border: none;
+    background-color: #f2f2f2;
+    color: #000;
+    text-align: center;
+    max-width: 40px;
+    width: 100%;
+    padding: 14px 0;
+    font-weight: 700;
+}
+
+.control-group,
+.control-group-2{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control-group a{
+	background-color: #f2f2f2;
+    min-width: 35px;
+    line-height: 44px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    color: #a9a9a9;
+    font-size: 32px;
+}
